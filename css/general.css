@@ -1,0 +1,347 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {text-decoration: none; color: #fff;}
+a:hover {color: #fff;}
+
+.link {cursor: pointer;}
+label.err {color: red;}
+
+.left {float: left;}
+.right {float: right;}
+
+body {background: #000 url(../images/main_background.jpg) center top no-repeat; color: #fff; font-family: Verdana; font-size: 13px;}
+
+#header {height: 120px; background: url(../images/header.png) center no-repeat;}
+#header .title {height: 25px; min-width: 989px; background: url(../images/header-title-bg.png) repeat; border-bottom: 1px solid #013D4A; font-weight: bold; font-size: 11px;}
+#header .title .button {background: url(../images/header-title-button.png) no-repeat; width: 100px; height: 20px; float: right; margin: 2px 10px 0 0; text-align: center; position: relative; z-index: 1;}
+#header .title .button:hover {background-position: 0 100%;}
+#header .title .button label {font-size: 9px; text-transform: uppercase; line-height: 19px; text-shadow: 1px 1px 1px #000;}
+#header .title .user {float: left; width: 200px; margin: 0 6px 0 20px; line-height: 25px; color: #A5A5A5; position: relative; z-index: 1;}
+#header .title .user a.logout {background: url(../images/icons.png) 0px -14px no-repeat; width: 14px; height: 14px; float: left; margin: 5px 5px 0 0;}
+#header .title .servertime {float: left; background: url(../images/icons.png) no-repeat; padding-left: 17px; margin-top: 5px; line-height: 13px;}
+#header .title .onixia {background: url(../images/onixia-logo2.png) center no-repeat; width: 100%; min-width: 989px; height: 20px; position: absolute; top: 3px; z-index: 0;}
+#header .content {width: 989px; height: 94px; margin: 0 auto;}
+#header .content .res {float: left; margin: 0 0 0 90px; height: 100%;}
+#header .content .res .res-box {text-align: center; min-width: 80px; height: 90px; background: url(../images/vertical-line.png) right no-repeat; float: left;}
+#header .content .res .last {background: none;}
+#header .content .res .res-box label {margin: 0px 10px; font-weight: bold; font-size: 11px;}
+#header .content .res .res-box .logo {width: 35px; height: 35px; margin: 15px auto 5px auto;}
+#header .content .res .res-box .metal {background: url(../images/res-logos.png) no-repeat;}
+#header .content .res .res-box .crystal {background: url(../images/res-logos.png) 0 -35px no-repeat;}
+#header .content .res .res-box .gas {background: url(../images/res-logos.png) 0 -70px no-repeat;}
+#header .content .res .res-box .energy {background: url(../images/res-logos.png) 0 -105px no-repeat;}
+#header .content .res .res-box .cubits {background: url(../images/res-logos.png) 0 -140px no-repeat;}
+#header .content .menu {float: right; margin: 0 110px 0 0; text-align: center; height: 100%;}
+#header .content .menu label {font-size: 12px; line-height: 50px; font-weight: bold; text-shadow: 1px 1px 2px #3E9FCA; padding-right: 3px;}
+#header .content .menu .tab {width: 80px; height: 53px; background: url(../images/menu-tabs.png) no-repeat; margin: 15px 0 0 10px; float: right;}
+#header .content .menu .tab:hover {background-position: 0 100%;}
+
+.tooltip {display: none; background: url(../images/player-info-bg.png) repeat; font-size: 12px; padding: 0 10px 5px; line-height: 20px; text-shadow: 1px 1px 1px #000;}
+.tooltip h2 {width: 100%; height: 25px; background: #031A2B ; border-bottom: 1px solid #2F75A8; padding: 0 10px; line-height: 25px; margin: 0 0 5px -10px; font-weight: bold;}
+.tooltip b {font-weight: bold;}
+
+#res-title {width: 100%; height: 25px; background: url(../images/panel-bg.png) repeat; border-bottom: 1px solid #313F41;}
+#res-title #res {width: 988px; margin: 0 auto; height: 25px;}
+#res-title #res .user {float: left; width: 150px; font-size: 12px; line-height: 23px; float: left; margin-left: 20px; color: #A5A5A5;}
+#res-title #res .user a.logout {background: url(../images/icons.png) 0px -14px no-repeat; width: 14px; height: 14px; float: left; margin: 5px 5px 0 6px;}
+#res-title #res  label {margin: 0 20px 0 30px; line-height: 20px; font-weight: bold; font-size: 11px;}
+#res-title #res  .logo {background: url(../images/res-logos.png) 0 0 no-repeat; height: 20px; float: right; margin-top: 2px;}
+#res-title #res .metal {background-position: -60px 0;}
+#res-title #res .crystal {background-position: -60px -20px;}
+#res-title #res .gas {background-position: -60px -40px;}
+#res-title #res .energy {background-position: -60px -60px;}
+#res-title #res .cubits {background-position: -60px -80px;}
+#res-title #res .servertime {background: url(../images/icons.png) no-repeat; padding-left: 17px; float: left; margin-top: 5px; line-height: 13px;}
+
+#body {width: 989px; margin: 0 auto;}
+#content {width: 690px; float: left; margin: 15px 0 20px 40px; background: url(../images/panel-bg.png) repeat; border: 1px solid #0073cc;}
+#content .page {margin: 15px; min-height: 500px; text-align: center;}
+#content .page h2.title {font-size: 17px; text-align: left; padding: 0 0 10px 10px; margin-bottom: 10px; background: url(../images/line-separator.png) bottom repeat-x;}
+
+#leftNav {width: 250px; float: left; margin-top: 15px;}
+#leftNav .nav {background: url(../images/panel-title.png) no-repeat; float: left;}
+#leftNav .nav span {width: 15px; height: 15px; float: left; margin: 9px 0 0 9px;}
+#leftNav .nav span.main {background: url(../images/nav-main-icon.png) no-repeat;}
+#leftNav .nav span.planets {background: url(../images/nav-planet-icon.png) no-repeat;}
+#leftNav .nav span.information {background: url(../images/nav-information-icon.png) no-repeat;}
+#leftNav .nav span.personal {background: url(../images/nav-personal-icon.png) no-repeat;}
+#leftNav .nav label {font-size: 12px; padding-left: 15px; line-height: 32px; text-shadow: 0px 0px 2px #fff; font-weight: bold; color: #060c16;}
+#leftNav .nav .lines {float: left; width: 242px; margin: 4px 0 0 5px; font-size: 13px; background: url(../images/panel-bg.png) repeat; border-left: 1px solid #0073cc; border-right: 1px solid #0073cc;}
+#leftNav ul {margin: 0 15px 5px 15px;}
+#leftNav li {background: url(../images/line-separator.png) 100% 100% repeat-x; overflow: hidden; line-height: 30px; text-shadow: 1px 1px 1px #000;}
+#leftNav li a {display: block; color: #8C8B8B;}
+#leftNav li a:hover {color: #fff;}
+#leftNav .bottom {width: 244px; height: 20px; background: url(../images/panel-bottom.png) no-repeat; margin-left: 5px; float: left;}
+
+input, textarea, select {background: url(../images/panel-bg.png) repeat; border: 1px solid #08586A; color: #00C0FF; padding: 2px 5px; -webkit-border-radius: 2px; border-radius: 2px;}
+input:focus, input.submit:hover, input.checkbox {-webkit-box-shadow: 0px 0px 5px #007eff; box-shadow: 0px 0px 5px #007eff;}
+input.ships, input.deleteMessages {width: 200px; height: 22px; background: url(../images/msg-button.png) no-repeat; border: 0px; color: #fff; font-weight: bold; float: left; margin: 0 0 20px 200px;}
+input.msg-button {box-shadow: none; padding-bottom: 5px; border: none;}
+input.ships:hover, input.deleteMessages:hover {background-position:0 100%; box-shadow: none; }
+
+.item {width: 660px; height: 239px; background: url(../images/item-bg.png) no-repeat;}
+.item .title {width:160px; padding: 15px 0 0 15px; float: left; font-weight: bold; text-shadow: 1px 1px 2px #636363; color: #BCE0F7;}
+.item .resources {float: right; width: 410px; padding: 13px 0;}
+.item .resources .res {float: left; width: 70px; line-height: 18px; text-shadow: 1px 1px #000; font-size: 11px; font-weight: bold; padding: 0 5px;}
+.item .resources .res .logo {width: 25px; height: 25px; display: block; margin: 0 23px 3px;}
+.item .resources .res .metal {background: url(../images/res-logos.png) -35px 0;}
+.item .resources .res .crystal {background: url(../images/res-logos.png) -35px -25px;}
+.item .resources .res .gas {background: url(../images/res-logos.png) -35px -50px;}
+.item .resources .res .energy {background: url(../images/res-logos.png) -35px -75px;}
+.item .resources .res .level {background: url(../images/res-logos.png) -35px -100px;}
+.item .image {float: left; width: 200px; height: 180px; margin: 10px 0 0 15px;}
+.item .opt {float: right; width: 420px; line-height: 50px; font-weight: bold; font-size: 11px; text-shadow: 1px 1px 3px #000;}
+.item .opt .description {font-size: 13px; text-align: left; height: 40px; padding: 0 10px; font-size: 12px; line-height: 18px; font-weight: normal;}
+.item .opt .time {float: left; background: url(../images/opt-item.png) no-repeat; width: 416px; height: 50px; margin-bottom: 10px;}
+.item .opt .build {float: left; background: url(../images/opt-item.png) 0 50% no-repeat; width: 412px; height: 50px;}
+.item .opt a .build:hover {background: url(../images/opt-item.png) 0 100% no-repeat;}
+.item .opt #time {font-size: 15px;}
+.separator {height: 2px; width: 100%; background: url(../images/line-separator.png) repeat-x; margin: 15px 0;}
+
+table.standart {width: 660px; font-size: 12px; margin-bottom: 20px;}
+table.standart thead tr {font-size: 13px; font-weight: bold; line-height: 25px;}
+table.standart thead td {border: 1px solid #0880A0; padding: 0 10px; background: url(../images/table-head.png) repeat-x; vertical-align: middle;}
+
+table.standart tbody tr {height: 27px; background: url(../images/player-info-bg.png) repeat;}
+table.standart tbody td {border-bottom: 1px solid #08586A; border-left: 1px solid #0880A0; border-right: 1px solid #0880A0; padding: 0 10px; vertical-align: middle; height: 100%;}
+table.standart tbody td.id {width: 10px; padding: 0 5px; background: none;}
+table.standart .cell80 {width: 90px;}
+table.standart .cell70 {width: 70px;}
+table.standart .cell20 {width: 20px;}
+table.standart tbody td.ast-rec {width: 40px; height: 20px; padding: 0 5px; background: none; border-bottom: 1px solid #043743; border-right: 1px solid #043743;}
+table.standart td.ast-rec label.asteroid {color: green;}
+table.standart td.ast-rec label.recycle {color: orange;}
+table.standart tbody td.active {background: url(../images/table-td-active.png) repeat;}
+table.standart tbody td.opt {background: none; border: none; width: 20px; padding: 5px;}
+table.standart tr.head td {font-size: 12px;}
+table.standart td.res, table.standart td.player {text-align: left;}
+
+.legend tbody td.id {width: 30px; background: url(../images/table-td-active.png) repeat;}
+.legend tbody td.desc {color: #8C8B8B;}
+
+table.galaxy td.active {text-align: left;}
+
+.statistic p {font-size: 13px; color: #A5A5A5; text-align: left;}
+
+.coordinats label {float: left; color: #00C0FF; font-size: 13px; line-height: 20px;}
+.coordinats input, .planets table, .legend table {float: left;}
+.coordinats .back_button, .next_button {color: #2569A8; width: 20px; height: 20px;float: left; text-align: center; font-size: 17px;}
+.coordinats .back_button:hover, .next_button:hover {color: #CDF4FF; background: url(../images/back-next-button-over.png) center center no-repeat;}
+
+.missionFeatures {display: none;}
+
+.ship {width: 320px; float: left; margin-bottom: 20px; text-align: left;}
+.ship label {font-size: 16px; font-weight: bold; margin-left: 25px; line-height: 35px; color: #7FB5DD; text-shadow: 1px 1px 1px #1E1E1E;}
+.ship-last {margin-left: 20px;}
+.ship .image {width: 320px; height: 171px; background: url(../images/ship-box.png) no-repeat; margin-bottom: 10px;}
+.ship .info {width: 320px; min-height: 169px; background: url(../images/shipinfo-panel.png) no-repeat; font-size: 13px; color: #B7B7B7;}
+.ship .info .line {background: url(../images/line-separator.png) bottom repeat-x; margin: 0 10px; padding: 10px 0;}
+.ship .info .line .title {float: left; width: 140px; padding-left: 30px;}
+
+.message {width: 112px; height: 158px; background: url(../images/messages-panel.png) 1px 0 no-repeat; float: left; text-align: center; padding: 30px 10px 0 10px; font-size: 9px;}
+.message:hover {background-position: -145px 0;}
+.message label {line-height: 30px; font-size: 11px;}
+.message .logo {width: 60px; height: 60px; margin: 20px 0 0 26px;}
+.message .personal {background: url(../images/msg-icons.png) no-repeat;}
+.message .alliance {background: url(../images/msg-icons.png) -60px 0 no-repeat;}
+.message .spy {background: url(../images/msg-icons.png) -120px 0 no-repeat;}
+.message .millitary {background: url(../images/msg-icons.png) -180px 0 no-repeat;}
+.message .flights {background: url(../images/msg-icons.png) -240px 0 no-repeat;}
+.standart-button {background: url(../images/msg-button.png) no-repeat; width: 200px; height: 30px; display: inline-block; text-align: center; font-size: 14px; font-weight: bold; color: #BCE0F7; cursor: pointer; border: 0px none;}
+input.standart-button {padding-bottom: 4.5px;}
+a.standart-button {height: 23px; padding-top: 7px;}
+.standart-button:hover {background-position: 0 100%; border: 0 none;}
+.standart-button:focus {-webkit-box-shadow: none; box-shadow: none;}
+
+.button {display: inline-block; cursor: pointer; background: none; border: 0px none; overflow: hidden; padding: 0;}
+.button span {background: url(../images/button.png) 0 0 no-repeat; height: 25px; padding-left: 4px; display: inline-block;}
+.button span:hover {background-position: 0 -25px;}
+.button span span {background: url(../images/button.png) 100% -50px no-repeat; height: 25px; padding: 0 20px 0 16px; line-height: 23px; font-size: 11px; font-weight: bold; display: inline-block; color: #00cfff;}
+.button span span:hover {background-position: 100% -75px; color: #fff;}
+
+.msg-panel {width: 100%; float: left;}
+.msg-panel .avatar, .panels .avatar {width: 140px; height: 182px; float: left;}
+.msg-panel .avatar-info, .panels .avatar-info {background: url(../images/msg-avatar.png) no-repeat; width: 140px; height: 182px; text-align: center;}
+.msg-panel .avatar-info label, .panels .avatar-info label {line-height: 40px; font-size: 12px; font-weight: bold;}
+.msg-panel .avatar-info label.msg-status {display: block; margin-top: 40px;}
+.msg-panel .content {background: url(../images/msg-bg.png) repeat; float: right; width: 500px;}
+.msg-panel .content .title {height: 25px; background: url(../images/header-title-bg.png) repeat; border-bottom: 1px solid #013D4A; margin-bottom: 15px;  font-size: 11px; padding: 0 10px; font-weight: bold; color: #A5A5A5;}
+.msg-panel .content .title span.time {background: url(../images/icons.png) no-repeat; height: 14px; float: left; margin-top: 6px; padding-left: 19px; line-height: 13px;}
+.msg-panel .content .title span.new {float: left; color: #37bf02; margin-left: 20px; line-height: 25px;}
+.msg-panel .content .title a.delete {color: #A5A5A5; height: 14px; background: url(../images/icons.png) 0 -43px no-repeat; padding-left: 19px; float: right; margin-top: 6px; line-height: 13px;}
+.msg-panel .content .title a.replay {color: #A5A5A5; height: 14px; background: url(../images/icons.png) 0 -56px no-repeat; padding-left: 19px; float: right; margin-top: 6px; line-height: 13px; margin-right: 20px;}
+.msg-panel .content .msg {padding: 0 15px; font-size: 14px; text-align: left; color: #E7E7E7; min-height: 100px; text-shadow: 1px 1px 1px #000;}
+.msg-panel .content .options a.ignore {color: #A5A5A5; height: 14px; background: url(../images/icons.png) 0 -69px no-repeat; padding-left: 19px; float: right; margin-top: 6px; line-height: 13px; margin-right: 20px;}
+.msg-panel .content .options a.report {color: #A5A5A5; height: 14px; background: url(../images/icons.png) 0 -28px no-repeat; padding-left: 19px; float: right; margin-top: 6px; line-height: 13px;}
+.msg-panel .content .options {float: left; width: 480px; height: 25px;  background: url(../images/header-title-bg.png) repeat; border-top: 1px solid #013D4A; margin-top: 15px;  font-size: 11px; padding: 0 10px; font-weight: bold; color: #A5A5A5; line-height: 25px;}
+.msg-panel .content .options input {float: left; margin-top: 6px;}
+.msg-panel .content .options label {float: left; margin-left: 5px;}
+.msg-panel .content .options a:hover, .msg-panel .content .title a:hover {color: #fff;}
+.msg-panel .spy-report-title {width: 100%; height: 25px; background: url(../images/header-title-bg.png) repeat; border: 1px solid #013D4A;}
+.msg-panel .spy-report-title span { padding: 0 10px; line-height: 25px;}
+.msg-panel .spy-resources {margin: 20px 0;}
+.msg-panel .spy-resources span {padding-right: 15px;}
+.msg-panel .spy-table {width: 170px; float: left;}
+.msg-panel .spy-table tr {height: 20px;}
+.msg-panel .spy-table td {background: none; border: none;}
+
+/* PAGING BUTTONS */
+.paging_nav {float: left; width: 100%; margin: 0 0 10px;}
+.paging_nav a {width: 39px; height: 30px; line-height: 27px; font-weight: bold; display: inline-block; color: #1ff5fe; background: url(../images/paging-buttons.png) 0 0 no-repeat;}
+.paging_nav a span {float: left; width: 100%;}
+.paging_nav a.prev_page {background-position: 0 0;}
+.paging_nav a.prev_page:hover {background-position: 0 100%;}
+.paging_nav a.page_button {background-position: -39px 0;}
+.paging_nav a.page_button:hover {background-position: -39px 100%; color: #fff;}
+.paging_nav a.next_page {background-position: -78px 0;}
+.paging_nav a.next_page:hover {background-position: -78px 100%;}
+.paging_nav a.active, .paging_nav a.active:hover {background-position: -39px 100%; color: #e51717;}
+.paging_nav a.prev-no-link:hover {background-position: 0 0;}
+.paging_nav a.next-no-link:hover {background-position: -78px 0;}
+
+/* SETTINGS */
+.panels .panel {background: url(../images/line-separator.png) bottom repeat-x; padding-bottom: 20px; margin-bottom: 20px;}
+.panels .avatar {margin: 0 20px 0 80px;}
+.panels .main p {font-size: 12px; text-shadow: 1px 1px 1px #000; color: #A5A5A5;}
+.panels .main input, .panels .main select {margin: 40px 0 10px; float: none;}
+.panels .main .inputavatar {opacity: 1;}
+.panels h2 {font-size: 20px; text-shadow: 1px 1px 1px #000;}
+.panels .security h2 {margin-bottom: 40px;}
+.panels .security span, span.delpl-pass {width: 250px; text-align: right; line-height: 20px; padding-right: 10px;}
+.panels .security input, input.delpl-pass {width: 200px; margin-bottom: 20px;}
+.panels .security label.deleteAcc {color: red; width: 100%; float: left; font-size: 12px; text-shadow: 1px 1px 1px #000;}
+.panels .security label.changeUsername {width: 100%; float: left; font-size: 12px; text-shadow: 1px 1px 1px #000; margin-bottom: 20px;}
+.panels .security a {width: 100%; float: left; margin: 20px 0; text-decoration: underline; font-weight: bold; font-size: 13px;}
+.panels .planets select {width: 200px; margin: 40px 0 20px 0;}
+.panels .planets input {width: 200px;}
+.panels .planets .radio {width: 0px; margin: 20px 5px 20px 0;}
+
+/* SETTINGS SUBNAV */
+.subnav {height: 27px; line-height: 26px; font-size: 14px;}
+.subnav a {height: 27px; padding-left: 15px; float: left; background: url(../images/settings-subnav-bts.png) 0 0 no-repeat; margin-right: 20px;}
+.subnav span {cursor: pointer; height: 27px; float: left; background: url(../images/settings-subnav-bts.png) 100% -27px no-repeat; padding-right: 15px;}
+.subnav a:hover {background-position: 0 -54px;}
+.subnav a:hover span {background-position: 100% -81px;}
+.subnav a.current {background-position: 0 -108px;}
+.subnav a.current span {background-position: 100% -135px; color: #000D20;}
+
+/* ALLIANCE */
+.admin-panel {width: 660px; margin: 20px 0;}
+.admin-panel .ap-top {width: 626px; height: 30px; background: url(../images/admin-panel.png) no-repeat; padding: 0 17px; line-height: 18px; font-weight: bold; font-size: 11px; color: #BCE0F7; position: relative; z-index: 3;}
+.admin-panel .ap-body {width: 626px; height: 1px; background: url(../images/admin-panel-body.png) repeat-y; position: relative; z-index: 1; margin: -8px 0 0 17px; padding-top: 15px;}
+.admin-panel .ap-footer {width: 626px; height: 11px; background: url(../images/admin-panel.png) 0 100% no-repeat; position: relative; z-index: 2; margin: -5px 0 0 17px; font-size: 9px;}
+.ap-footer span {width: 120px; display: inline-block; cursor: pointer;}
+.ap-body .ap-content, .ap-footer .less {display: none;}
+.ap-content {width: 586px; padding: 10px 20px;}
+
+.politics table {margin: 0 auto;}
+.politics table a.policy-1 {color: red;}
+.politics table a.policy-2 {color: blue;}
+
+table.alliance tbody td {height: 20px;}
+table.alliance td span {float: left; height: 100%; padding-top: 7px; font-size: 11px;}
+table.alliance td span a {font-weight: bold; font-size: 13px;}
+table.alliance td.status {font-size: 11px;}
+table.alliance td.online {color: #37BF02;}
+table.alliance td.offline {color: #A5A5A5;}
+.popup-opt {width: 20px; height: 20px; background: url(../images/alliance-player-icons.png) 0 0 no-repeat; float: right; display: none; margin-top: 3px; cursor: pointer; margin-left: 5px;}
+.player-msg {background-position: -20px 0;}
+.player-stats {background-position: -40px 0;}
+.player-options:hover {background-position: 0 100%;}
+.player-msg:hover {background-position: -20px 100%;}
+.player-stats:hover {background-position: -40px 100%;}
+.rank {width: 16px; height: 16px; display: inline-block; background: url(../images/ranks.png) 0 0 no-repeat;}
+/*.rank-1 {background-position: 0 0;}*/
+.rank-2 {background-position: 0 -16px;}
+.rank-3 {background-position: 0 -32px;}
+.rank-4 {background-position: 0 -48px;}
+.rank-5 {background-position: 0 -64px;}
+
+table.alliance-admin-panel {width: 450px; border: 0px none; margin: 0 auto 10px;}
+table.alliance-admin-panel thead {font-size: 14px; font-weight: bold;}
+table.alliance-admin-panel thead tr {height: 30px;}
+table.alliance-admin-panel thead td {vertical-align: middle;}
+table.alliance-admin-panel td.permition {text-align: left;}
+table.alliance-admin-panel tr.odd {background-color: #0b273e;}
+table.alliance-admin-panel tbody td {vertical-align: middle; height: 30px;}
+table.alliance-admin-panel tbody td.permition {padding-left: 10px; font-size: 11px;}
+
+.player_info_panel {width: 310px; height: 188px; background: url(../images/player-info-panel.png) no-repeat; position: absolute; display: none;}
+.player_info_panel .pi_title {width: 100%; height: 24px;}
+.player_info_panel .fill {width: 100%; height: 177px; padding-top: 11px; }
+.pi_title span {float: left; width: 243px; padding: 7px 10px 0;}
+.pi_title .close {float: right; width: 47px; height: 24px; background: url(../images/player-info-panel.png) 0 -188px no-repeat; cursor: pointer;}
+.pi_title .close:hover {background-position: -47px -188px;}
+.player_info_panel .change-rank {width: 140px; height: 130px; margin: 20px 0 0 20px;}
+.change-rank a {width: 53px; height: 30px; background: url(../images/up-down-buttons.png) 0 0 no-repeat; margin: 0 auto; display: block; cursor: pointer;}
+.change-rank a.promote {background-position: 0 0;}
+.change-rank a.demote {background-position: 0 -30px;}
+.change-rank a.promote:hover {background-position: -53px 0;}
+.change-rank a.demote:hover {background-position: -53px -30px;}
+.change-rank a.p-blind {background-position: 100% 0; cursor: default;}
+.change-rank a.d-blind {background-position: 100% 100%; cursor: default;}
+
+/* ALLIANCE -END- */
+
+#message_panel {background: url(../images/msg-panel.png) no-repeat; width: 600px; height: 359px; position: fixed; top: 20%; display: none;}
+#message_panel .close {background: url(../images/close-button.png) no-repeat; width: 40px; height: 35px; float: right; margin: 13px 40px 0 0}
+#message_panel .close:hover {background-position: 0 -36px;}
+#message_panel form {padding: 80px 90px 20px 80px}
+#message_panel input, textarea {border-width: 2px;}
+#message_panel .content {margin-top: 15px;}
+textarea.msg {width: 415px; height: 150px; margin-top: 5px;}
+
+#system_messages_popup {background: url(../images/blank.png) no-repeat; width: 500px; position: fixed; top: 20% !important; display: none; text-align: center;}
+.smp-header {background: url(../images/system-msg-panel.png) 0 0 no-repeat; width: 450px; height: 25px; padding: 15px 25px 40px; font-size: 18px; line-height: 25px;}
+.smp-body {background: url(../images/system-msg-body.png) repeat-y; width: 470px; padding: 0 15px; color: #BCE0F7;}
+.smp-footer {background: url(../images/system-msg-panel.png) 0 100% no-repeat; width: 470px; height: 30px; padding: 20px 15px 10px;}
+
+.message404 {width: 100%; height: 350px; background: url(../images/404.png) center bottom no-repeat; color: #E9E9E9; font-size: 18px; font-weight: bold; text-align: center;}
+.message404 label {font-size: 25px;}
+
+#noscript-bg {width: 100%; height: 100%; background-color: black; position: fixed; opacity: 0.8; left: 0; top: 0; z-index: 999;}
+#noscript-panel {background: url(../images/blank.png) no-repeat; width: 500px; position: fixed; top: 20%; left: 30%; text-align: center; color: #BCE0F7; z-index: 1000;}
+#noscript-panel b {font-size: 16px; font-weight: bold; float: left; width: 100%; margin-bottom: 10px;}
+#noscript-panel a {color: #0073cc;}
